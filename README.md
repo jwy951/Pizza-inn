@@ -20,6 +20,6 @@ To access this project on your local files, you can clone it using these steps
 1. CSS
 1. Git
 ### Live Site
-View [live](https://https://jwy951.github.io/Pizza-inn/)
+View [live](https://jwy951.github.io/Pizza-inn/)
 ### Licence
 This project is under the  [MIT](LICENSE) licences
