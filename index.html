@@ -15,6 +15,40 @@
             <p> We offer a great collection of delicious pizzas</p>
             <p> We hope you have a a great experience</p>
         </div>
+        <h2>Select your pizza size below:</h2>
+        <div class="row" class="sizes" id="sizes">
+            <div class="col-md-4">
+                <img src="./img/medium.jpeg" alt="">
+                <p>This one is enough for one individual</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="size" id="small" value="Small"
+                        onclick="small(); crust(); toppings();">
+                    <label class="form-check-label" for="inlineRadio1">Small (Ksh150.00)</label>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./img/small.jpeg" alt="">
+                <p>This one is good for 3 or 4 people</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="size" id="medium" value="Medium"
+                        onclick="medium(); crust(); toppings();">
+                    <label class="form-check-label" for="inlineRadio2">Medium (ksh200.00)</label>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./img/large.jpeg" alt="">
+                <p>This one is good for 6 or 7 people</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="size" id="large" value="Large"
+                        onclick="large(); crust(); toppings();">
+                    <label class="form-check-label" for="inlineRadio3">Large (ksh250.00)</label>
+                </div>
+            </div>
+        </div>
+        
+
     </div>
     
 </body>
