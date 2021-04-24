@@ -1,23 +1,23 @@
 function small() {
     // this.size = "Small";
-    this.sizeCharge = 150.00;
-    this.crustCharge = 15.00;
-    this.toppingCharge = 10.00;
+    myPizza.sizeCharge = 150.00;
+    myPizza.crustCharge = 15.00;
+    myPizza.toppingCharge = 10.00;
 };
 
 function medium() {
     // myPizza.size = "Medium";
-    this.sizeCharge = 200.00;
-    this.crustCharge = 20.00;
-    this.toppingCharge = 20.00;
+    myPizza.sizeCharge = 200.00;
+    myPizza.crustCharge = 20.00;
+    myPizza.toppingCharge = 20.00;
 
 };
 
 function large() {
     // myPizza.size = "Large";
-    this.sizeCharge = 250.00;
-    this.crustCharge = 25.00;
-    this.toppingCharge = 30.00;
+    myPizza.sizeCharge = 250.00;
+    myPizza.crustCharge = 25.00;
+    myPizza.toppingCharge = 30.00;
 
 };
 
@@ -58,7 +58,7 @@ function crust() {
         document.getElementById("thick-crust").innerHTML = "ksh" + 20.00;
         document.getElementById("italian-crust").innerHTML = "ksh" + 20.00;
     }
-    
+
     else {
         document.getElementById("thin-crust").innerHTML = "ksh" + 25.00;
         document.getElementById("hard-crust").innerHTML = "ksh" + 25.00;
@@ -103,4 +103,17 @@ function Pizza() {
     this.sizeCharge = 0;
     this.toppingCharge = 0;
     this.crustCharge = 0;
+}
+
+var myPizza = new Pizza();
+
+Pizza.prototype.totalCharge = function () {
+    return myPizza.sizeCharge + myPizza.crustCharge + myPizza.toppingCharge + myPizza.delivery;
+};
+function newFinalPrice() {
+    var price = myPizza.totalCharge()
+    reset();
+    console.log(myPizza.totalCharge());
+    console.log(myPizza.size());
+
 }
