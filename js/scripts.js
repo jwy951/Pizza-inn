@@ -139,3 +139,11 @@ function reset() {
         size[i].checked = false;
     }
 };
+
+function finalPrice() {
+    document.getElementById("size-price").innerHTML = "ksh" + myPizza.sizeCharge;
+    document.getElementById("crust-price").innerHTML = "ksh" + myPizza.crustCharge;
+    document.getElementById("topping-price").innerHTML = "ksh" + myPizza.toppingCharge;
+    document.getElementById("delivery-price").innerHTML = "ksh" + myPizza.delivery;
+    document.getElementById("total-charge").innerHTML = "ksh" + myPizza.totalCharge();
+};
