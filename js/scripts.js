@@ -27,9 +27,9 @@ function large() {
 
 function delivery() {
 
-    myPizza.delivery = 1.5;
+    myPizza.delivery = 110;
     prompt("Where would you like to have your pizza delivered. Enter Estate Name");
-    alert("Your delivery fees would be $1.5!")
+    alert("Your delivery fees would be ksh 110.00!")
 
 };
 function checkedToppings() {
@@ -43,3 +43,13 @@ function checkedToppings() {
     myPizza.toppingCharge *= checked;
     console.log(myPizza.toppingCharge);
 }
+
+function crust() {
+    console.log(myPizza.size);
+    if (myPizza.size === "Large") {
+        document.getElementById("thin-crust").innerHTML = "$" + 2.50;
+        document.getElementById("hard-crust").innerHTML = "$" + 2.50;
+        document.getElementById("thick-crust").innerHTML = "$" + 2.50;
+        document.getElementById("italian-crust").innerHTML = "$" + 2.50;
+
+    }
