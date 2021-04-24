@@ -58,6 +58,7 @@ function crust() {
         document.getElementById("thick-crust").innerHTML = "ksh" + 20.00;
         document.getElementById("italian-crust").innerHTML = "ksh" + 20.00;
     }
+    
     else {
         document.getElementById("thin-crust").innerHTML = "ksh" + 25.00;
         document.getElementById("hard-crust").innerHTML = "ksh" + 25.00;
@@ -83,6 +84,7 @@ function toppings() {
         document.getElementById("tomato-topping").innerHTML = "ksh20.00";
         document.getElementById("cheese-topping").innerHTML = "ksh20.00";
     }
+
     else {
         document.getElementById("fruit-topping").innerHTML = "ksh10.00";
         document.getElementById("kale-topping").innerHTML = "ksh10.00";
@@ -90,7 +92,15 @@ function toppings() {
         document.getElementById("spinach-topping").innerHTML = "ksh10.00";
         document.getElementById("tomato-topping").innerHTML = "ksh10.00";
         document.getElementById("cheese-topping").innerHTML = "ksh10.00";
-
-
     }
+}
+
+function Pizza() {
+    this.size = "";
+    this.topping = "";
+    this.crust = "";
+    this.delivery = 0;
+    this.sizeCharge = 0;
+    this.toppingCharge = 0;
+    this.crustCharge = 0;
 }
