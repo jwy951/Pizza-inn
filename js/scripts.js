@@ -65,3 +65,15 @@ function crust() {
         document.getElementById("italian-crust").innerHTML = "ksh" + 25.00;
     }
 }
+
+function toppings() {
+    if (myPizza.size === "Large") {
+        document.getElementById("fruit-topping").innerHTML = "ksh30.00";
+        document.getElementById("kale-topping").innerHTML = "ksh30.00";
+        document.getElementById("pepperoni-topping").innerHTML = "ksh3.00";
+        document.getElementById("spinach-topping").innerHTML = "ksh30.00";
+        document.getElementById("tomato-topping").innerHTML = "ksh30.00";
+        document.getElementById("cheese-topping").innerHTML = "ksh30.00";
+    }
+    
+}
