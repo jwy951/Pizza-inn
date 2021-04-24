@@ -1,4 +1,4 @@
-function small(size,crust, topping) {
+function small() {
     // this.size = "Small";
     this.sizeCharge = 150.00;
     this.crustCharge = 15.00;
@@ -75,5 +75,12 @@ function toppings() {
         document.getElementById("tomato-topping").innerHTML = "ksh30.00";
         document.getElementById("cheese-topping").innerHTML = "ksh30.00";
     }
-    
+     else if (myPizza.size === "Medium") {
+        document.getElementById("fruit-topping").innerHTML = "ksh20.00";
+        document.getElementById("kale-topping").innerHTML = "ksh20.00";
+        document.getElementById("pepperoni-topping").innerHTML = "ksh20.00";
+        document.getElementById("spinach-topping").innerHTML = "ksh20.00";
+        document.getElementById("tomato-topping").innerHTML = "ksh20.00";
+        document.getElementById("cheese-topping").innerHTML = "ksh20.00";
+    }
 }
