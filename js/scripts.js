@@ -83,4 +83,14 @@ function toppings() {
         document.getElementById("tomato-topping").innerHTML = "ksh20.00";
         document.getElementById("cheese-topping").innerHTML = "ksh20.00";
     }
+    else {
+        document.getElementById("fruit-topping").innerHTML = "ksh10.00";
+        document.getElementById("kale-topping").innerHTML = "ksh10.00";
+        document.getElementById("pepperoni-topping").innerHTML = "ksh10.00";
+        document.getElementById("spinach-topping").innerHTML = "ksh10.00";
+        document.getElementById("tomato-topping").innerHTML = "ksh10.00";
+        document.getElementById("cheese-topping").innerHTML = "ksh10.00";
+
+
+    }
 }
