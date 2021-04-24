@@ -47,9 +47,15 @@ function checkedToppings() {
 function crust() {
     console.log(myPizza.size);
     if (myPizza.size === "Large") {
-        document.getElementById("thin-crust").innerHTML = "$" + 2.50;
-        document.getElementById("hard-crust").innerHTML = "$" + 2.50;
-        document.getElementById("thick-crust").innerHTML = "$" + 2.50;
-        document.getElementById("italian-crust").innerHTML = "$" + 2.50;
-
+        document.getElementById("thin-crust").innerHTML = "ksh" + 15.00;
+        document.getElementById("hard-crust").innerHTML = "ksh" + 15.00;
+        document.getElementById("thick-crust").innerHTML = "ksh" + 15.00;
+        document.getElementById("italian-crust").innerHTML = "ksh" + 15.00;
     }
+    else if (myPizza.size === "Medium") {
+        document.getElementById("thin-crust").innerHTML = "$" + 20.00;
+        document.getElementById("hard-crust").innerHTML = "$" + 20.00;
+        document.getElementById("thick-crust").innerHTML = "$" + 20.00;
+        document.getElementById("italian-crust").innerHTML = "$" + 20.00;
+    }
+}
