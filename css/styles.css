@@ -1,5 +1,7 @@
 #background{
-    background-image: url(../images/tikkapiz.jpeg);
+    /* background-image: url(../images/tikkapiz.jpeg); */
     text-align: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #a434eb;
 }
