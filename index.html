@@ -165,7 +165,7 @@
             <h3>Would you like to have your pizza delivered?</h3>
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="delivery" id="yes" value="Yes"
-                    <!-- onclick="checkedToppings(); delivery();"> -->
+                    onclick="checkedToppings(); delivery();">
                 <label class="form-check-label" for="toppings">
                     <div id="yes">YES</div>
                 </label>
@@ -176,6 +176,24 @@
                 <label class="form-check-label" for="toppings">
                     <div id="no">NO</div>
                 </label>
+            </div>
+        </div>
+
+         <div class="jumbotron">
+            <h2>Here is your order</h2>
+            <br></br>
+            <div class="row">
+                <div class="col-8">
+                    <h4 class="cart" id="cart"> <span class="price" style="color:rgb(100, 83, 83)"><i class="shopping-cart"></i>
+                            <b></b></span>
+                    </h4>
+                    <p><a href="#">Pizza Size</a> <span class="price" id="size-price">ksh =</span></p>
+                    <p><a href="#">Pizza Crust</a> <span class="price" id="crust-price">ksh =</span></p>
+                    <p><a href="#">Pizza Toppings</a> <span class="price" id="topping-price">ksh =</span></p>
+                    <p><a href="#">Delivery Fee</a> <span class="price" id="delivery-price">ksh =</span></p>
+                    <hr>
+                    <p>Total <span class="price" id="total-price" style="color:black"><b>ksh =</b></span></p>
+                </div>
             </div>
         </div>
 
