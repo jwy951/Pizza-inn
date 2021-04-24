@@ -53,9 +53,15 @@ function crust() {
         document.getElementById("italian-crust").innerHTML = "ksh" + 15.00;
     }
     else if (myPizza.size === "Medium") {
-        document.getElementById("thin-crust").innerHTML = "$" + 20.00;
-        document.getElementById("hard-crust").innerHTML = "$" + 20.00;
-        document.getElementById("thick-crust").innerHTML = "$" + 20.00;
-        document.getElementById("italian-crust").innerHTML = "$" + 20.00;
+        document.getElementById("thin-crust").innerHTML = "ksh" + 20.00;
+        document.getElementById("hard-crust").innerHTML = "ksh" + 20.00;
+        document.getElementById("thick-crust").innerHTML = "ksh" + 20.00;
+        document.getElementById("italian-crust").innerHTML = "ksh" + 20.00;
+    }
+    else {
+        document.getElementById("thin-crust").innerHTML = "ksh" + 25.00;
+        document.getElementById("hard-crust").innerHTML = "ksh" + 25.00;
+        document.getElementById("thick-crust").innerHTML = "ksh" + 25.00;
+        document.getElementById("italian-crust").innerHTML = "ksh" + 25.00;
     }
 }
