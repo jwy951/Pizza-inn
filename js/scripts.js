@@ -115,5 +115,27 @@ function newFinalPrice() {
     reset();
     console.log(myPizza.totalCharge());
     console.log(myPizza.size());
-
 }
+
+function reset() {
+    document.getElementsByName("delivery").reset;
+    document.getElementsByName("toppings").reset;
+    document.getElementsByName("crust").reset;
+    document.getElementsByName("size").reset;
+    var del = document.getElementsByName("delivery");
+    var top = document.getElementsByName("toppings");
+    var crus = document.getElementsByName("crust");
+    var size = document.getElementsByName("size");
+    for (var i = 0; i < del.length; i++) {
+        del[i].checked = false;
+    }
+    for (var i = 0; i < top.length; i++) {
+        top[i].checked = false;
+    }
+    for (var i = 0; i < crus.length; i++) {
+        crus[i].checked = false;
+    }
+    for (var i = 0; i < size.length; i++) {
+        size[i].checked = false;
+    }
+};
