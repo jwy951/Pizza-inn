@@ -145,5 +145,5 @@ function finalPrice() {
     document.getElementById("crust-price").innerHTML = "ksh" + myPizza.crustCharge;
     document.getElementById("topping-price").innerHTML = "ksh" + myPizza.toppingCharge;
     document.getElementById("delivery-price").innerHTML = "ksh" + myPizza.delivery;
-    document.getElementById("total-charge").innerHTML = "ksh" + myPizza.totalCharge();
+    document.getElementById("total-charge").innerHTML = "" + myPizza.totalCharge();
 };
