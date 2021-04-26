@@ -9,7 +9,7 @@ function medium() {
     myPizza.size = "Medium";
     myPizza.sizeCharge = 200.00;
     myPizza.crustCharge = 20.00;
-    myPizza.toppingCharge = 20.00;
+    myPizza.toppingCharge = 15.00;
 
 };
 
@@ -17,7 +17,7 @@ function large() {
     myPizza.size = "Large";
     myPizza.sizeCharge = 250.00;
     myPizza.crustCharge = 25.00;
-    myPizza.toppingCharge = 30.00;
+    myPizza.toppingCharge = 20.00;
 
 };
 
@@ -47,10 +47,10 @@ function checkedToppings() {
 function crust() {
     console.log(myPizza.size);
     if (myPizza.size === "Large") {
-        document.getElementById("thin-crust").innerHTML = "ksh" + 15.00;
-        document.getElementById("hard-crust").innerHTML = "ksh" + 15.00;
-        document.getElementById("thick-crust").innerHTML = "ksh" + 15.00;
-        document.getElementById("italian-crust").innerHTML = "ksh" + 15.00;
+        document.getElementById("thin-crust").innerHTML = "ksh" + 25.00;
+        document.getElementById("hard-crust").innerHTML = "ksh" + 25.00;
+        document.getElementById("thick-crust").innerHTML = "ksh" + 25.00;
+        document.getElementById("italian-crust").innerHTML = "ksh" + 25.00;
     }
     else if (myPizza.size === "Medium") {
         document.getElementById("thin-crust").innerHTML = "ksh" + 20.00;
@@ -60,10 +60,10 @@ function crust() {
     }
 
     else {
-        document.getElementById("thin-crust").innerHTML = "ksh" + 25.00;
-        document.getElementById("hard-crust").innerHTML = "ksh" + 25.00;
-        document.getElementById("thick-crust").innerHTML = "ksh" + 25.00;
-        document.getElementById("italian-crust").innerHTML = "ksh" + 25.00;
+        document.getElementById("thin-crust").innerHTML = "ksh" + 10.00;
+        document.getElementById("hard-crust").innerHTML = "ksh" + 15.00;
+        document.getElementById("thick-crust").innerHTML = "ksh" + 15.00;
+        document.getElementById("italian-crust").innerHTML = "ksh" + 15.00;
     }
 }
 
@@ -71,7 +71,7 @@ function toppings() {
     if (myPizza.size === "Large") {
         document.getElementById("fruit-topping").innerHTML = "ksh30.00";
         document.getElementById("kale-topping").innerHTML = "ksh30.00";
-        document.getElementById("pepperoni-topping").innerHTML = "ksh3.00";
+        document.getElementById("pepperoni-topping").innerHTML = "ksh30.00";
         document.getElementById("spinach-topping").innerHTML = "ksh30.00";
         document.getElementById("tomato-topping").innerHTML = "ksh30.00";
         document.getElementById("cheese-topping").innerHTML = "ksh30.00";

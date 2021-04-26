@@ -5,3 +5,40 @@
     background-size: cover;
     background-color: #eb346b;
 }
+.container{
+    /* margin-top:2%; */
+    margin-bottom:5%;
+}
+#header{
+    font-weight: bold;
+    font-style: oblique;
+}
+#welcome{
+    font-weight: bold;
+    font-size: 80px;
+    color: wheat
+}
+.btn{
+    background-color: aqua;
+}
+
+/* .total-charge{
+    margin-bottom: 20px;
+} */
+
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+        z-index:1%
+    }
+
+    .btn {
+        font-size: 70%;
+    }
+}
+@media screen and (min-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+    
+}
